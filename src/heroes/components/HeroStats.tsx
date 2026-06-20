@@ -11,11 +11,14 @@ export const HeroStats = () => {
 const {favoriteCount} = use(FavoriteHeroContext)
 const {data:summary} = UseHeroSummary();
 
+<<<<<<< Updated upstream
 
 // const porcentageFavorite = useMemo(()=>(
 //   const percentage = favoriteCount / summary?.totalHeroes
 // ),[favoriteCount, summary])
 
+=======
+>>>>>>> Stashed changes
   if (!summary){
     return <div>Loadingu....</div>
   }
@@ -42,8 +45,18 @@ const {data:summary} = UseHeroSummary();
         title="Favoritos"
         icon={<Heart className="h-4 w-4 text-muted-foreground" />}
       >
+<<<<<<< Updated upstream
         <div className="text-2xl font-bold text-red-600">{favoriteCount}</div>
         <p className="text-xs text-muted-foreground">{((favoriteCount/summary?.totalHeroes)*100).toFixed(2)}% of Total</p>
+=======
+        <div className="text-2xl font-bold text-red-600"
+          data-testid = "favorite-count"
+        >
+          {favoriteCount}</div>
+        <p className="text-xs text-muted-foreground"
+        data-testid= "favorite-percentage">
+          {((favoriteCount/summary?.totalHeroes)*100).toFixed(2)}% of Total</p>
+>>>>>>> Stashed changes
       </HeroStatCard>
 
       <HeroStatCard

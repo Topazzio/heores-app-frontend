@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 import { createBrowserRouter } from "react-router";
+=======
+import { createHashRouter } from "react-router";
+>>>>>>> Stashed changes
 import { lazy } from "react";
 
 import { AdminLayouts } from "@/admin/layouts/AdminLayouts";
@@ -10,7 +14,12 @@ import { HomePage } from "@/heroes/pages/home/HomePage";
 
 const SearchPage = lazy(() => import("@/heroes/pages/search/SearchPage"));
 
+<<<<<<< Updated upstream
 export const appRouter = createBrowserRouter([
+=======
+// export const appRouter = createBrowserRouter([
+export const appRouter = createHashRouter([
+>>>>>>> Stashed changes
   {
     path: "/",
     element: <HeroesLayouts />,

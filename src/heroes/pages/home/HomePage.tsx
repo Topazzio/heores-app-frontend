@@ -19,7 +19,11 @@ export const HomePage = () => {
   const activeTab = searchParams.get("tab") ?? "all";
   const page = searchParams.get("page") ?? "1";
   const limit = searchParams.get("limit") ?? "6";
+<<<<<<< Updated upstream
   const category = searchParams.get('category') ?? 'aa';
+=======
+  const category = searchParams.get('category') ?? 'all';
+>>>>>>> Stashed changes
 
 
   const selectedTab = useMemo(() => {

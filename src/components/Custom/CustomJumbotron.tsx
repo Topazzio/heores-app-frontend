@@ -1,4 +1,7 @@
+<<<<<<< Updated upstream
 import { HeroStats } from "@/heroes/components/HeroStats";
+=======
+>>>>>>> Stashed changes
 
 interface Props {
   title: string;
